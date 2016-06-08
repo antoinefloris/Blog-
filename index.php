@@ -30,9 +30,7 @@ include 'header.php';
                     <a href="article.php?id=<?= $article["id"]; ?>">Lire l'article</a>
                 </article>
              </div>
-            <?php
-            endforeach;
-            ?>
+            <?php endforeach; ?>
 
         </div>
 <?php
