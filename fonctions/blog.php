@@ -18,3 +18,13 @@ function articles(){
     return $articles;
 }
 
+function formattage_date($publication) {
+    $publication = explode(" ", $publication);
+    $date = explode("-", $publication[0]);
+    $heure = explode(":", $publication[1]);
+
+    $resultat = $date[2] . '/' . $date[1] . '/' . $date[0] . ' ' . 'à' . ' ' . $heure[0] . 'h' . $heure[1];
+
+    return $resultat;
+}
+
